@@ -11,10 +11,11 @@ public final class DataProcessingUtil {
   }
 
   public static class Constants {
-    public static final String INPUT_FILES_LOCATION = "src/main/resources/input/";
+    public static final String INPUT_LOCATION = "src/main/resources/input/";
     public static final String OUTPUT_LOCATION = "src/main/resources/output";
     public static final String ARCHIVE_FILES_LOCATION =
         "/Users/anshulgautam/Downloads/archive-reddit-data/";
+    public static final String BODY_NA = "BODY_NA";
 
     public static String[] BLOCK_WORDS = {
       "[[removed]]", "[[deleted]]", "[i", "]", "-", "[", "[the", "[&gt;", "[you", "[this", "[i'm"

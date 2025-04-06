@@ -1,5 +1,7 @@
 package blog.utopian.nerd.mapper;
 
+import static blog.utopian.nerd.util.DataProcessingUtil.Constants.BODY_NA;
+
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -14,7 +16,7 @@ public class FlatMapper implements FlatMapFunction<Row, String>, Serializable {
     // If no content is present in the row, then just return 'BODY_NA' to signify that user data
     // didn't have a body present in the reddit post.
     if (row.isNullAt(0)) {
-      return List.of("BODY_NA").iterator();
+      return List.of(BODY_NA).iterator();
     }
 
     return Arrays.asList(
