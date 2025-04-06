@@ -23,7 +23,7 @@ public class SparkBatchApplication {
 
   public static void main(String[] args) throws IOException {
 
-    SparkSession sparkSession = getSparkSession("Reddit-Words-Analyzer");
+    SparkSession sparkSession = getSparkSession("Reddit-Words-Analyzer-Batch");
 
     // Creating the dataframe by loading the provided input csv data.
     Dataset<Row> redditInputDataframe =
